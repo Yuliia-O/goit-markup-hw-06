@@ -568,6 +568,83 @@ img {
 .social-icon {
   fill: currentColor;
 }
+
+.subscribe-wrapper {
+  margin-left: auto;
+}
+
+.subscribe-text {
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  color: var(--font-color-dark-background);
+}
+
+.subscribe-form {
+  position: relative;
+}
+
+.subscribe-form:focus-within .subscribe-form-label {
+  visibility: hidden;
+}
+
+.subscribe-form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  line-height: 1.2;
+}
+
+.subscribe-form-input {
+  padding: 15px 16px;
+  min-width: 358px;
+  margin-right: 12px;
+  color: var(--font-color-dark-background);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px ;
+  /* i don't know what the below property does, but it was in figma */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  
+  color: var(--font-color-dark-background);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--trans-time-function);
+}
+
+.subscribe-btn:hover, .subscribe-btn:focus {
+  background-color: var(--order-button-hover-color);
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: var(--font-color-dark-background);
+}
+
+
+
+
+
 /* ===========END MAIN PAGE=========== */
 
 /* ===========START PORTFOLIO PAGE=========== */
