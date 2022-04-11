@@ -289,7 +289,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   padding: 40px;
   background-color: var(--team-cards-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -448,27 +448,15 @@ img {
   background-image 250ms var(--trans-time-function);
 }
 
-.modal-send-btn {
+.modal .order-btn {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 56px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--font-color-dark-background);
-  background-color: var(--accent-color);
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  transition: background-color 250ms var(--trans-time-function);
 }
 
-.modal-send-btn:focus,
-.modal-send-btn:hover {
+.modal .order-btn:focus,
+.modal .order-btn:hover {
   background-color: var(--order-button-hover-color);
 }
 
@@ -700,10 +688,9 @@ img {
   color: var(--accent-color);
 }
 
-.join-us-title {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
+.footer-title {
+  font-weight: 700;
+  line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 20px;
 
@@ -728,15 +715,6 @@ img {
   margin-left: auto;
 }
 
-.subscribe-text {
-  font-weight: 700;
-  line-height: 1.4;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  
-  color: var(--font-color-dark-background);
-}
-
 .subscribe-form-input {
   padding: 15px 16px;
   min-width: 358px;
@@ -750,28 +728,14 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.subscribe-btn {
+.footer .order-btn {
   display: inline-flex;
   align-items: center;
   padding: 10px 30px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-  border: none;
-  cursor: pointer;
-  
-  color: var(--font-color-dark-background);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  transition: background-color 250ms var(--trans-time-function);
 }
 
-.subscribe-btn:hover, .subscribe-btn:focus {
+.footer .order-btn:hover, .footer .order-btn:focus {
   background-color: var(--order-button-hover-color);
 }
 
